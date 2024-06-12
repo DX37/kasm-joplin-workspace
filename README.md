@@ -10,7 +10,7 @@ Made this because there's networks, like corporate one, where's Kerberos or NTLM
 
 Simply create workspace in Kasm, fill Docker Image with `ghcr.io/dx37/kasm-joplin-workspace:main` and Docker Registry with `https://ghcr.io` and you're set for downloading and running this workspace.
 
-You can also fill other fiels like:
+You can also fill other fields like:
 
 * Friendly Name as `Joplin`
 * Description as `A note taking and to-do application with synchronization capabilities.`
