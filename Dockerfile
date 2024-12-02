@@ -1,5 +1,4 @@
-FROM kasmweb/core-ubuntu-focal:1.16.0
-#FROM kasmweb/core-ubuntu-jammy:1.15.0
+FROM kasmweb/core-ubuntu-focal:1.16.1
 USER root
 
 ENV HOME /home/kasm-default-profile
