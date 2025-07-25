@@ -8,7 +8,6 @@ WORKDIR $HOME
 
 ######### Customize Container Here ###########
 
-
 # Update the desktop environment to be optimized for a single application
 RUN cp $HOME/.config/xfce4/xfconf/single-application-xfce-perchannel-xml/* $HOME/.config/xfce4/xfconf/xfce-perchannel-xml/
 RUN cp /usr/share/backgrounds/bg_kasm.png /usr/share/backgrounds/bg_default.png
@@ -37,7 +36,6 @@ RUN echo "#!/usr/bin/env bash" > /opt/joplin/squashfs-root/launcher \
 
 COPY ./custom_startup.sh $STARTUPDIR/custom_startup.sh
 RUN chmod +x $STARTUPDIR/custom_startup.sh
-
 
 ######### End Customizations ###########
 
