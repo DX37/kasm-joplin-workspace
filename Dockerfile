@@ -6,7 +6,7 @@ ENV STARTUPDIR /dockerstartup
 ENV INST_SCRIPTS $STARTUPDIR/install
 WORKDIR $HOME
 
-######### Customize Container Here ###########
+######## Customize Container Here ##########
 
 # Update the desktop environment to be optimized for a single application
 RUN cp $HOME/.config/xfce4/xfconf/single-application-xfce-perchannel-xml/* $HOME/.config/xfce4/xfconf/xfce-perchannel-xml/
@@ -37,7 +37,7 @@ RUN echo "#!/usr/bin/env bash" > /opt/joplin/squashfs-root/launcher \
 COPY ./custom_startup.sh $STARTUPDIR/custom_startup.sh
 RUN chmod +x $STARTUPDIR/custom_startup.sh
 
-######### End Customizations ###########
+######## End Customizations ##########
 
 RUN chown 1000:0 $HOME
 RUN $STARTUPDIR/set_user_permission.sh $HOME
