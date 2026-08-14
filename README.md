@@ -14,7 +14,7 @@ You can also fill other fields like:
 
 * Friendly Name as `Joplin`
 * Description as `A note taking and to-do application with synchronization capabilities.`
-* Thumbnail URL as Joplin's `https://joplinapp.org/images/Icon512.png`
+* Thumbnail URL as Joplin's `https://raw.githubusercontent.com/homarr-labs/dashboard-icons/refs/heads/main/svg/joplin.svg`
 * Categories as `Productivity`
 
 Other necessary fields should be filled as you wish.
