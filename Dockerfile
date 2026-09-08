@@ -27,10 +27,10 @@ RUN echo "#!/usr/bin/env bash" > /opt/joplin/squashfs-root/launcher \
     && echo "export APPDIR=/opt/joplin/squashfs-root/" >> /opt/joplin/squashfs-root/launcher \
     && echo "/opt/joplin/squashfs-root/AppRun --no-sandbox "$@"" >> /opt/joplin/squashfs-root/launcher \
     && chmod +x /opt/joplin/squashfs-root/launcher \
-    && sed -i 's@^Exec=.*@Exec=/opt/joplin/squashfs-root/launcher@g' /opt/joplin/squashfs-root/joplin.desktop \
-    && sed -i 's@^Icon=.*@Icon=/opt/joplin/joplin.png@g' /opt/joplin/squashfs-root/joplin.desktop \
-    && cp /opt/joplin/squashfs-root/joplin.desktop $HOME/Desktop \
-    && cp /opt/joplin/squashfs-root/joplin.desktop /usr/share/applications \
+    && sed -i 's@^Exec=.*@Exec=/opt/joplin/squashfs-root/launcher@g' /opt/joplin/squashfs-root/appimagekit-joplin.desktop \
+    && sed -i 's@^Icon=.*@Icon=/opt/joplin/joplin.png@g' /opt/joplin/squashfs-root/appimagekit-joplin.desktop \
+    && cp /opt/joplin/squashfs-root/appimagekit-joplin.desktop $HOME/Desktop/joplin.desktop \
+    && cp /opt/joplin/squashfs-root/appimagekit-joplin.desktop /usr/share/applications/joplin.desktop \
     && chmod +x $HOME/Desktop/joplin.desktop \
     && chmod +x /usr/share/applications/joplin.desktop
 
